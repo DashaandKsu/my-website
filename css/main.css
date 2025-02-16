@@ -1,0 +1,193 @@
+@import url(https://fonts.google.com/share?selection.family=Poppins:wght@800);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 400;
+    color: #c5d3e3; /*для текста на странице по умолчанию*/
+}
+
+a { /* указываем то, что для всех ссылок мы убираем нижнее подчеркивание*/
+
+
+}
+
+img { /*для всех картинок максимальная ширина будет 100%, чтобы изображение не вылазило за пределы родительского блока*/
+    max-width: 100%;
+}
+
+.birdimages {
+    width: 200px;
+    height: auto; /* Сохраняет пропорции */
+    border-radius: 10px; /* Закругляет углы */
+    border: 5px solid #4a813c;
+}
+
+.wrapper {
+    background: rgb(64,129,64);
+    background: linear-gradient(0deg, rgba(64,129,64,1) 0%, rgba(21,39,1,1) 100%);
+    width: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+
+}
+
+
+
+header {
+    padding: 50px 0;
+}
+
+header .logo {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+}
+
+header nav {
+    float: right; 
+    width: 40%;
+
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav ul li {
+    display: inline-block; /*тут мы говорим, что каждый отдельный элемент
+    в блоке это отдальный текст или часть,
+    к которой мы будеи обращаться*/
+}
+
+header nav ul li a{ /*покрасили ссылки в белый цвет*/
+    color: #fff;
+
+}
+
+header nav ul li.active::after{
+    content: '';
+    display: block;
+    width: 40px;
+    height: 5px;
+    background: #614028;
+    border-radius: 10px;
+}
+
+header nav ul li:not(.active) a:hover { /*если пункт меню активен, то при наведении не будет применяться при наведении на ссылку*/
+    border-bottom: 5px solid #b95a15;
+
+}
+
+header nav ul li.btn a{
+    background: #542606;
+    padding: 9px 17px;
+    border-radius: 5px;
+    transition: all 500ms ease; /*это плавный переход, который мы применяем ко всем свойствам, ease это просто название самого эффекта*/
+
+}
+
+header nav ul li.btn a:hover{
+    background: #614028;
+}
+
+.imaginecont {
+    display: flex;
+    align-items: left; /* Выравниваем содержимое по центру */
+}
+
+.birdimages {
+    margin-right: 5px; /* Отступ справа от изображения */
+}
+
+.vertical-text {
+    display: flex;
+    flex-direction: column; /* Размещаем элементы в столбец */
+    justify-content: space-between; /* Распределяем равномерно по высоте */
+    height: 100%; /* Занимает всю высоту контейнера */
+    font-size: 27px; /* Размер шрифта */
+    color: #092304; /* Цвет текста */
+    font-weight: bold;
+}
+
+.vertical-text span {
+    writing-mode: vertical-rl; /* Вертикальное написание текста */
+    margin-bottom: 10px;
+    transform: rotate(270deg);
+}
+
+
+/*перешли к блоку с информацией обо мне, то есть вторрой основной болк после меню*/
+
+.baseinfo {
+    display: flex; /* включаем flexbox*/
+    align-items: center; /*выравниваем элемнеты по вертикали*/
+    gap: 30px; /*рассмтояние между текстом и изображением*/
+
+}
+
+.textleftone{ /*тут мы сначала сказали, что текстовый блок занимает все доступное пространство
+    это флекс, потом мы падингом запоняем это простарнство видимо
+    далее бэкраунд фон мы выбираем фон текстового блока
+    и бордеррадиус делает нам закругленные углы*/
+    flex: 1;
+    padding: 10px;
+    background-color: #5b8768;
+    border-radius: 8px;
+} 
+
+.overlay-images{
+    flex: 1; /*блок с изображением занимает доступное пространство*/
+}
+
+.overlay-images img{ /*1. изображение не выходит за пределы блока
+    2. сохраняем пропорции изображения
+    3. закругляем углы*/
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+.ov-im1 {
+    display: block;
+    object-fit: cover;
+    width: 200px;
+    height: auto;
+    border: 2px solid #542606;
+    /*две обводки сразу*/
+    outline: 5px solid #092304;
+    outline-offset: 10px;
+
+}
+
+.ov-im2 {
+    display: block;
+    object-fit: cover;
+    width: 200px;
+    height: auto;
+    border: 2px solid #542606;
+    /*две обводки сразу*/
+    outline: 5px solid #092304;
+    outline-offset: 10px;
+}
+
+.ov-im3 {
+    display: block;
+    object-fit: cover;
+    width: 200px;
+    height: auto;
+    border: 2px solid #542606;
+    /*две обводки сразу*/
+    outline: 5px solid #092304;
+    outline-offset: 10px;
+}
