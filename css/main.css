@@ -9,6 +9,7 @@ body {
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
     color: #c5d3e3; /*для текста на странице по умолчанию*/
+    font-size: 16px;
 }
 
 a { /* указываем то, что для всех ссылок мы убираем нижнее подчеркивание*/
@@ -81,6 +82,9 @@ header nav ul li.active::after{
     height: 5px;
     background: #614028;
     border-radius: 10px;
+    position: relative;
+    top: 10px;
+    left: -10px;
 }
 
 header nav ul li:not(.active) a:hover { /*если пункт меню активен, то при наведении не будет применяться при наведении на ссылку*/
@@ -100,13 +104,59 @@ header nav ul li.btn a:hover{
     background: #614028;
 }
 
+.hero {
+    padding-bottom: 100px;
+
+}
+
+.hero--info{
+    width: 530px;
+padding-top: 70px;
+
+}
+
+.hero--info h1 {
+    color: #b95a15;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero--info h2 {
+    color: #803b0a;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hero--info p {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 0;
+}
+
+.hero--info .btn {
+    background: #ae8a37;
+    color: #246319;
+    border-radius: 50px;
+    padding: 15px 30px;
+    border: 0;
+    transition: all 500ms ease;
+    font-size: 18px;
+    margin: 30px 0;
+}
+
+.hero--info .btn:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
 .imaginecont {
     display: flex;
     align-items: left; /* Выравниваем содержимое по центру */
 }
 
 .birdimages {
-    margin-right: 5px; /* Отступ справа от изображения */
+    margin-right: 50px; /* Отступ справа от изображения */
 }
 
 .vertical-text {
@@ -131,7 +181,7 @@ header nav ul li.btn a:hover{
 .baseinfo {
     display: flex; /* включаем flexbox*/
     align-items: center; /*выравниваем элемнеты по вертикали*/
-    gap: 30px; /*рассмтояние между текстом и изображением*/
+    gap: 300px; /*рассмтояние между текстом и изображением*/
 
 }
 
@@ -144,6 +194,17 @@ header nav ul li.btn a:hover{
     background-color: #5b8768;
     border-radius: 8px;
 } 
+
+.textleftone h2{
+    margin: 10px;
+    text-align: center;
+    font-weight: 900;
+    color: #623618;
+}
+
+.textleftone a{
+    color: #092304;
+}
 
 .overlay-images{
     flex: 1; /*блок с изображением занимает доступное пространство*/
