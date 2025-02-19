@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
-    color: #c5d3e3; /*для текста на странице по умолчанию*/
+    color: #0D475D; /*для текста на странице по умолчанию*/
     font-size: 16px;
 }
 
@@ -29,7 +29,7 @@ img { /*для всех картинок максимальная ширина �
 
 .wrapper {
     background: rgb(64,129,64);
-    background: linear-gradient(0deg, rgba(64,129,64,1) 0%, rgba(21,39,1,1) 100%);
+    background: #DAFFD7;
     width: 100%;
 }
 
@@ -54,6 +54,7 @@ header .logo {
 header nav {
     float: right; 
     width: 40%;
+    font-weight: 600;
 
 }
 
@@ -70,7 +71,7 @@ header nav ul li {
 }
 
 header nav ul li a{ /*покрасили ссылки в белый цвет*/
-    color: #fff;
+    color: #0D475D;
 
 }
 
@@ -103,33 +104,73 @@ header nav ul li.btn a:hover{
     background: #614028;
 }
 
-.hero {
-    padding-bottom: 100px;
+.hero--container{
+    height: auto;
+    width: auto;
+    border: 1px solid rgb(16, 181, 24);
+}
 
+.hero {
+
+    display: flex;
+    padding-bottom: 50px;
+    border: 1px solid red; /* Временно граница для проверки */
+    flex-direction: column;
 }
 
 .hero--info{
-    width: 530px;
-padding-top: 70px;
+   
+    height: 70vh;
+    width: auto;
+    padding-top: 20px;
+    border: 1px solid red;
 
 }
 
 .hero--info h1 {
-    color: #2b2b11;
-    font-size: 20px;
+    text-align: center;
+    color:#614028;
+    font-size: 40px;
     font-weight: 600;
-}
-
-.hero--info h2 {
-    color: #733600;
-    font-size: 20px;
-    font-weight: 600;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 1px solid red;
+    margin-bottom: 50px;
+    margin-left: 50px;
 }
 
 .hero--info p {
+    color: #733600;
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 50px ;
+}
+
+.hero--info h3 {
     font-weight: 500;
     line-height: 170%;
-    margin: 30px 0;
+    margin: 30px 30px;
+
+}
+
+.hero--info h4 {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 30px;
+
+}
+
+.hero--info h5 {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 30px;
+
+}
+
+.hero--info h6 {
+    font-weight: 500;
+    line-height: 170%;
+    margin: 30px 30px;
+
 }
 
 .hero--info .btn {
@@ -141,6 +182,7 @@ padding-top: 70px;
     transition: all 500ms ease;
     font-size: 18px;
     margin: 30px 0;
+    margin-left: 660px;
 }
 
 .hero--info .btn:hover {
@@ -149,13 +191,19 @@ padding-top: 70px;
 }
 
 
-.imaginecont {
+.imaginecont { /*тут картинка с птичкой, это ее родительский элемент в главном элементе хиро инфо*/
     display: flex;
+    height: 300px;
     align-items: left; /* Выравниваем содержимое по центру */
+    border: 1px solid #733600;
+    
 }
 
 .birdimages {
     margin-right: 50px; /* Отступ справа от изображения */
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 50px;
 }
 
 .vertical-text {
@@ -166,12 +214,14 @@ padding-top: 70px;
     font-size: 27px; /* Размер шрифта */
     color: #092304; /* Цвет текста */
     font-weight: bold;
+    border: 1px solid #733600;
 }
 
 .vertical-text span {
     writing-mode: vertical-rl; /* Вертикальное написание текста */
     margin-bottom: 10px;
     transform: rotate(270deg);
+    border: 1px solid #733600;
 }
 
 
@@ -181,7 +231,9 @@ padding-top: 70px;
     display: flex; /* включаем flexbox*/
     align-items: center; /*выравниваем элемнеты по вертикали*/
     gap: 300px; /*рассмтояние между текстом и изображением*/
-
+    flex-direction: column-reverse;
+    margin: auto;
+    border: 1px solid #4318b8;
 }
 
 .textleftone{ /*тут мы сначала сказали, что текстовый блок занимает все доступное пространство
