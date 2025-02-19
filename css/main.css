@@ -13,8 +13,7 @@ body {
 }
 
 a { /* указываем то, что для всех ссылок мы убираем нижнее подчеркивание*/
-
-
+    text-decoration: none;
 }
 
 img { /*для всех картинок максимальная ширина будет 100%, чтобы изображение не вылазило за пределы родительского блока*/
@@ -116,13 +115,13 @@ padding-top: 70px;
 }
 
 .hero--info h1 {
-    color: #b95a15;
+    color: #2b2b11;
     font-size: 20px;
     font-weight: 600;
 }
 
 .hero--info h2 {
-    color: #803b0a;
+    color: #733600;
     font-size: 20px;
     font-weight: 600;
 }
@@ -134,8 +133,8 @@ padding-top: 70px;
 }
 
 .hero--info .btn {
-    background: #ae8a37;
-    color: #246319;
+    background: #301907;
+    color: #7e713d;
     border-radius: 50px;
     padding: 15px 30px;
     border: 0;
@@ -191,11 +190,17 @@ padding-top: 70px;
     и бордеррадиус делает нам закругленные углы*/
     flex: 1;
     padding: 10px;
-    background-color: #5b8768;
+    background-color: #bb9564;
     border-radius: 8px;
 } 
 
 .textleftone h2{
+    margin: 10px;
+    font-weight: 900;
+    color: #83471f;
+}
+
+.textleftone h3{
     margin: 10px;
     text-align: center;
     font-weight: 900;
@@ -228,6 +233,7 @@ padding-top: 70px;
     /*две обводки сразу*/
     outline: 5px solid #092304;
     outline-offset: 10px;
+    margin: 25px;
 
 }
 
@@ -240,6 +246,7 @@ padding-top: 70px;
     /*две обводки сразу*/
     outline: 5px solid #092304;
     outline-offset: 10px;
+    margin: 25px;
 }
 
 .ov-im3 {
@@ -251,4 +258,14 @@ padding-top: 70px;
     /*две обводки сразу*/
     outline: 5px solid #092304;
     outline-offset: 10px;
+    margin: 25px;
+
+}
+
+.overlay-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /*контейнер занимает всю ширину */
+    border: 1px solid red; /* Временно граница для проверки */
 }
