@@ -8,7 +8,7 @@
 body {
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
-    color: #0D475D; /*для текста на странице по умолчанию*/
+    color: #142017; /*для текста на странице по умолчанию*/
     font-size: 16px;
 }
 
@@ -38,8 +38,6 @@ img { /*для всех картинок максимальная ширина �
     margin: 0 auto;
 
 }
-
-
 
 header {
     padding: 50px 0;
@@ -71,7 +69,7 @@ header nav ul li {
 }
 
 header nav ul li a{ /*покрасили ссылки в белый цвет*/
-    color: #0D475D;
+    color: #234A1B;
 
 }
 
@@ -88,12 +86,12 @@ header nav ul li.active::after{
 }
 
 header nav ul li:not(.active) a:hover { /*если пункт меню активен, то при наведении не будет применяться при наведении на ссылку*/
-    border-bottom: 5px solid #b95a15;
+    border-bottom: 5px solid #e9b895;
 
 }
 
 header nav ul li.btn a{
-    background: #542606;
+    background: #925225;
     padding: 9px 17px;
     border-radius: 5px;
     transition: all 500ms ease; /*это плавный переход, который мы применяем ко всем свойствам, ease это просто название самого эффекта*/
@@ -105,26 +103,22 @@ header nav ul li.btn a:hover{
 }
 
 .hero--container{
-    height: auto;
-    width: auto;
-    border: 1px solid rgb(16, 181, 24);
-}
-
-.hero {
-
     display: flex;
     padding-bottom: 50px;
-    border: 1px solid red; /* Временно граница для проверки */
     flex-direction: column;
+    height: auto;
+    width: auto;
 }
 
+
 .hero--info{
-   
     height: 70vh;
     width: auto;
     padding-top: 20px;
-    border: 1px solid red;
+}
 
+.hero--info a{
+    color: #092304;
 }
 
 .hero--info h1 {
@@ -133,7 +127,6 @@ header nav ul li.btn a:hover{
     font-size: 40px;
     font-weight: 600;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border: 1px solid red;
     margin-bottom: 50px;
     margin-left: 50px;
 }
@@ -142,47 +135,27 @@ header nav ul li.btn a:hover{
     color: #733600;
     font-size: 20px;
     font-weight: 600;
-    margin-left: 50px ;
+    margin-left: 50px;
 }
 
-.hero--info h3 {
-    font-weight: 500;
+.hero--info h3, .hero--info h4, .hero--info h5, .hero--info h6 {
+    font-weight: 900;
     line-height: 170%;
     margin: 30px 30px;
 
 }
 
-.hero--info h4 {
-    font-weight: 500;
-    line-height: 170%;
-    margin: 30px 30px;
-
-}
-
-.hero--info h5 {
-    font-weight: 500;
-    line-height: 170%;
-    margin: 30px 30px;
-
-}
-
-.hero--info h6 {
-    font-weight: 500;
-    line-height: 170%;
-    margin: 30px 30px;
-
-}
 
 .hero--info .btn {
-    background: #301907;
-    color: #7e713d;
+    background: #68513e;
+    color: #080701;
     border-radius: 50px;
     padding: 15px 30px;
     border: 0;
     transition: all 500ms ease;
     font-size: 18px;
     margin: 30px 0;
-    margin-left: 660px;
+    margin-left: 770px;
 }
 
 .hero--info .btn:hover {
@@ -194,130 +167,120 @@ header nav ul li.btn a:hover{
 .imaginecont { /*тут картинка с птичкой, это ее родительский элемент в главном элементе хиро инфо*/
     display: flex;
     height: 300px;
-    align-items: left; /* Выравниваем содержимое по центру */
-    border: 1px solid #733600;
+   /* Выравниваем содержимое по центру */
+   
     
 }
 
 .birdimages {
-    margin-right: 50px; /* Отступ справа от изображения */
+    margin-right: 300px; /* Отступ справа от изображения */
     margin-top: auto;
     margin-bottom: auto;
-    margin-left: 50px;
+    margin-left: 560px;
 }
 
 .vertical-text {
     display: flex;
     flex-direction: column; /* Размещаем элементы в столбец */
     justify-content: space-between; /* Распределяем равномерно по высоте */
-    height: 100%; /* Занимает всю высоту контейнера */
+    height: 90%; /* Занимает всю высоту контейнера 100 процентов от родительского элемента*/
     font-size: 27px; /* Размер шрифта */
     color: #092304; /* Цвет текста */
     font-weight: bold;
-    border: 1px solid #733600;
+    margin-top: 9px;
+    
 }
 
 .vertical-text span {
     writing-mode: vertical-rl; /* Вертикальное написание текста */
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     transform: rotate(270deg);
-    border: 1px solid #733600;
+    
 }
 
 
 /*перешли к блоку с информацией обо мне, то есть вторрой основной болк после меню*/
 
 .baseinfo {
-    display: flex; /* включаем flexbox*/
-    align-items: center; /*выравниваем элемнеты по вертикали*/
-    gap: 300px; /*рассмтояние между текстом и изображением*/
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column; /* Меняем направление на вертикальное */
+    align-items: center; /* Выравниваем элементы по центру */
+    gap: 20px; /* Уменьшаем расстояние между текстом и изображениями */
     margin: auto;
-    border: 1px solid #4318b8;
+    padding: 20px; /* Добавляем отступы внутри блока */
 }
 
-.textleftone{ /*тут мы сначала сказали, что текстовый блок занимает все доступное пространство
-    это флекс, потом мы падингом запоняем это простарнство видимо
-    далее бэкраунд фон мы выбираем фон текстового блока
-    и бордеррадиус делает нам закругленные углы*/
-    flex: 1;
-    padding: 10px;
+.textleftone {
+    padding-left: 10px;
     background-color: #bb9564;
-    border-radius: 8px;
+    border-radius: 40px;
+    width: 100%; /* Текстовый блок занимает всю ширину */
 } 
 
-.textleftone h2{
+.textleftone h2 {
     margin: 10px;
     font-weight: 900;
-    color: #83471f;
+    color: #234A1B;
 }
 
-.textleftone h3{
+.textleftone h3 {
     margin: 10px;
     text-align: center;
     font-weight: 900;
-    color: #623618;
+    color: #234A1B;
 }
 
-.textleftone a{
+.textleftone a {
     color: #092304;
 }
 
-.overlay-images{
-    flex: 1; /*блок с изображением занимает доступное пространство*/
+.textleftone p{
+    margin-left: 10px;
+    color: #234A1B;
 }
 
-.overlay-images img{ /*1. изображение не выходит за пределы блока
-    2. сохраняем пропорции изображения
-    3. закругляем углы*/
+.textleftone address{
+    margin-left: 15px;
+    color: #234A1B;
+}
+
+.overlay-images {
+    display: flex;
+    justify-content: space-between; /* Распределяем изображения по ширине */
+    align-items: center;
+    width: 100%; /* Контейнер занимает всю ширину */
+}
+
+.overlay-images img {
     max-width: 100%;
     height: auto;
     border-radius: 8px;
 }
 
-
-.ov-im1 {
+.ov-im1, .ov-im2, .ov-im3 {
     display: block;
     object-fit: cover;
     width: 200px;
     height: auto;
-    border: 2px solid #542606;
-    /*две обводки сразу*/
-    outline: 5px solid #092304;
-    outline-offset: 10px;
-    margin: 25px;
-
-}
-
-.ov-im2 {
-    display: block;
-    object-fit: cover;
-    width: 200px;
-    height: auto;
-    border: 2px solid #542606;
-    /*две обводки сразу*/
     outline: 5px solid #092304;
     outline-offset: 10px;
     margin: 25px;
 }
 
-.ov-im3 {
-    display: block;
-    object-fit: cover;
-    width: 200px;
-    height: auto;
-    border: 2px solid #542606;
-    /*две обводки сразу*/
-    outline: 5px solid #092304;
-    outline-offset: 10px;
-    margin: 25px;
-
+.down{
+    color: #4a2910;
+    font-weight: 700;
 }
 
-.overlay-images{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%; /*контейнер занимает всю ширину */
-    border: 1px solid red; /* Временно граница для проверки */
+.down p{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.down footer p{
+    font-size: 15px;
+}
+
+.down footer a{
+    color: #092304;
 }
