@@ -1,5 +1,16 @@
 @import url(https://fonts.google.com/share?selection.family=Poppins:wght@800);
 
+:root {
+    --primary-color: #730F0F; /* Основной цвет */
+    --secondary-color: #bb9564; /* Вторичный цвет */
+    --text-color: #2b2b11; /* Цвет текста */
+    --background-color: #C9D68A; /* Цвет фона */
+    --background-two-color: #adcea4; /*чередовние бэков*/
+    --accent-color: #301907; /* Акцентный цвет */
+    --link-color: #092304; /*для ссылок*/
+
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -115,6 +126,7 @@ header nav ul li.btn a:hover{
     height: 70vh;
     width: auto;
     padding-top: 20px;
+    background-color: var(--background-two-color);
 }
 
 .hero--info a{
@@ -208,11 +220,12 @@ header nav ul li.btn a:hover{
     gap: 20px; /* Уменьшаем расстояние между текстом и изображениями */
     margin: auto;
     padding: 20px; /* Добавляем отступы внутри блока */
+    background-color: var(--background-two-color);
 }
 
 .textleftone {
     padding-left: 10px;
-    background-color: #bb9564;
+    background-color: #debe95;
     border-radius: 40px;
     width: 100%; /* Текстовый блок занимает всю ширину */
 } 
@@ -270,6 +283,7 @@ header nav ul li.btn a:hover{
 .down{
     color: #4a2910;
     font-weight: 700;
+    background-color: #DAFFD7;
 }
 
 .down p{
@@ -283,6 +297,87 @@ header nav ul li.btn a:hover{
 
 .down footer a{
     color: #092304;
+}
+
+
+
+/*на момент создания второй страницы попробовала добавить основыне цвета
+и испоьлзовать их на практике, пока только разбираюсь как это будет работать, но страничка 
+уже выглядит прикольно
+
+на данный момент не разобралась с размерами и расположением на странице
+не понимаю что куда идет, изучила флекс бокс, блоки, но все равно не понятно
+*/
+
+@import url(https://fonts.googleapis.com/css?family=Lora);
+
+.galleryBody{
+    background-color: var(--background-color);
+}
+
+.three h2 {
+  font-family: monospace;
+  color: var(--primary-color);
+}
+.three ul {
+  list-style: none; 
+  margin: 0 auto;
+}
+.three a {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  transition: .5s linear;
+}
+
+nav .three{
+  display: block;
+  width: 660px;
+  margin: 0 auto 30px;
+}
+
+.three ul {
+    padding: 0;
+    background: #E4EFD1;
+  }
+  .three li {
+    display: inline-block;
+  }
+  .three a {
+    padding: 1em;
+    display: block;
+    color: #74924C;
+    border-right: 1px solid #BAD78B;
+    background: rgba(186, 215, 139, .3);
+  }
+  .three a:hover {background: #BAD78B}
+
+  .introduction{
+    text-align: center; /*выравнивание всего текста в блоке введения по центру*/
+    
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column; /* Элементы внутри галереи будут располагаться вертикально вроде*/
+    gap: 20px; /* Расстояние между элементами */
+    padding: 20px; /* Внутренние отступы */
+    margin: 30px; /* Внешние отступы */
+    border: 8px double #266030; /* Рамка вокруг галереи*/
+    
+}
+
+.gallery img{
+
+    border-radius: 50%;
+    width: 100%; /* Ширина будет адаптироваться */
+    max-width: 200px; /* Максимальная ширина */
+    height: auto; /* Высота будет автоматически подстраиваться */
+    object-fit: cover;
+    
+}
+
+.description a{
+    color: var(--link-color); /*такой же как и текст, так вышло...*/
 }
 
 
