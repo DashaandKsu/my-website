@@ -3,7 +3,7 @@
 :root {
     font-size: 62.5%; /* 1rem = 10px задала рем, но пока не поняла как и где использовать, буду пробовать с ним работать на следующих страницах*/
     --primary-color: #730F0F; /* Основной цвет */
-    --secondary-color: #bb9564; /* Вторичный цвет */
+    --secondary-color: #d9b88d; /* Вторичный цвет */
     --text-color: #2b2b11; /* Цвет текста */
     --background-color: #C9D68A; /* Цвет фона */
     --background-two-color: #adcea4; /*чередовние бэков*/
@@ -22,7 +22,7 @@ body {
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
     color: #142017; /*для текста на странице по умолчанию*/
-    font-size: 16px;
+    
 }
 
 a { /* указываем то, что для всех ссылок мы убираем нижнее подчеркивание*/
@@ -41,9 +41,11 @@ img { /*для всех картинок максимальная ширина �
 }
 
 .wrapper {
-    background: rgb(64,129,64);
+
     background: #DAFFD7;
     width: 100%;
+    
+
 }
 
 .container {
@@ -58,7 +60,7 @@ header {
 
 header .logo {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 3rem;
     font-weight: 800;
 }
 
@@ -138,7 +140,7 @@ header nav ul li.btn a:hover{
 .hero--info h1 {
     text-align: center;
     color:#614028;
-    font-size: 40px;
+    font-size: 4rem;
     font-weight: 600;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin-bottom: 50px;
@@ -147,7 +149,7 @@ header nav ul li.btn a:hover{
 
 .hero--info p {
     color: #733600;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: 600;
     margin-left: 50px;
 }
@@ -167,7 +169,7 @@ header nav ul li.btn a:hover{
     padding: 15px 30px;
     border: 0;
     transition: all 500ms ease;
-    font-size: 18px;
+    font-size: 1.8rem;
     margin: 30px 0;
     margin-left: 700px;
 }
@@ -198,7 +200,7 @@ header nav ul li.btn a:hover{
     flex-direction: column; /* Размещаем элементы в столбец */
     justify-content: space-between; /* Распределяем равномерно по высоте */
     height: 90%; /* Занимает всю высоту контейнера 100 процентов от родительского элемента*/
-    font-size: 27px; /* Размер шрифта */
+    font-size: 2.7rem; /* Размер шрифта */
     color: #092304; /* Цвет текста */
     font-weight: bold;
     margin-top: 9px;
@@ -282,23 +284,25 @@ header nav ul li.btn a:hover{
     margin: 25px;
 }
 
-.down{
+
+.down {
+    max-width: auto;
+    margin: 0 auto;
+    padding: 0 20px; /* 20px слева и справа */
+    height: 90px;
     color: #4a2910;
     font-weight: 700;
     background-color: #DAFFD7;
 }
 
-.down p{
-    font-size: 20px;
-    font-weight: 600;
-}
-
-.down footer p{
-    font-size: 15px;
-}
-
 .down footer a{
     color: #092304;
+}
+
+.forfwrap{
+    font-size: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -315,6 +319,7 @@ header nav ul li.btn a:hover{
 
 .galleryBody{
     background-color: var(--background-color);
+    font-size: 1.5rem;
 }
 
 .three h2 {
@@ -380,6 +385,45 @@ nav .three{
 
 .description a{
     color: var(--link-color); /*такой же как и текст, так вышло...*/
+}
+
+.description a:hover{
+    text-decoration: underline;
+    color: var(--link-color) ;
+}
+
+
+.downtwolist {
+    padding: 30px 0;
+    height: 150px;
+    color: var(--link-color);
+    font-weight: 700;
+    background-color: var(--secondary-color);
+}
+
+.downtwolist a{
+    color: #75ab6a;
+}
+
+.wrapftwo{
+    max-width: 800px; /* Максимальная ширина контента */
+    margin: 0 auto; /* Центрирование */
+    padding: 0 1rem; /* Отступы слева и справа */
+    border: var(--link-color)  10px;
+    border-style: dotted;
+}
+
+.wrapftwo p {
+    margin: 0.5rem 0; /* Отступы между параграфами */
+    font-size: 1.6rem; /* Размер шрифта */
+    margin-top: 7px;
+    
+}
+
+
+.wrapftwo a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+    color: var(--link-color);
 }
 
 
