@@ -340,6 +340,14 @@ nav .three{
   display: block;
   width: 660px;
   margin: 0 auto 30px;
+
+}
+
+.three{
+    padding-left: 20px; /* Внутренние отступы */
+    padding-right: 20px;
+    margin-right: 30px;
+    margin-left: 30px; /* Внешние отступы */
 }
 
 .three ul {
@@ -367,8 +375,10 @@ nav .three{
     display: flex;
     flex-direction: column; /* Элементы внутри галереи будут располагаться вертикально вроде*/
     gap: 20px; /* Расстояние между элементами */
-    padding: 20px; /* Внутренние отступы */
-    margin: 30px; /* Внешние отступы */
+    padding-left: 50px; /* Внутренние отступы */
+    padding-right: 50px;
+    margin-right: 50px;
+    margin-left: 50px; /* Внешние отступы */
     border: 8px double #266030; /* Рамка вокруг галереи*/
     
 }
@@ -427,7 +437,26 @@ nav .three{
 }
 
 
+.galleryTask {
+    width: 500px;
+    height:auto;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+   
+}
 
+
+.plastic, .koshki, .fish, .maxwell-cat{
+    display: block;
+    width: 200px;
+    height: auto;
+    outline: 5px solid #092304;
+    outline-offset: 20px;
+    margin: 50px;
+    border-radius: 10px;
+
+}
 
 
 
