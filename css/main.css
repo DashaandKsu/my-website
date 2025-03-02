@@ -322,6 +322,10 @@ header nav ul li.btn a:hover{
     font-size: 1.5rem;
 }
 
+.three{
+    background-color: var(--background-color);
+}
+
 .three h2 {
   font-family: monospace;
   color: var(--primary-color);
@@ -368,10 +372,15 @@ nav .three{
 
   .introduction{
     text-align: center; /*выравнивание всего текста в блоке введения по центру*/
-    
+    background-color: var(--background-color);
+    padding-left: 50px; /* Внутренние отступы */
+    padding-right: 50px;
+    margin-right: 50px;
+    margin-left: 50px; /* Внешние отступы */
 }
 
 .gallery{
+    background-color: var(--background-color);
     display: flex;
     flex-direction: column; /* Элементы внутри галереи будут располагаться вертикально вроде*/
     gap: 20px; /* Расстояние между элементами */
@@ -384,10 +393,11 @@ nav .three{
 }
 
 .gallery img{
-
+    margin-top: 50px;
+    margin-bottom: 50px;
     border-radius: 50%;
     width: 100%; /* Ширина будет адаптироваться */
-    max-width: 200px; /* Максимальная ширина */
+    max-width: 20%; /* Максимальная ширина */
     height: auto; /* Высота будет автоматически подстраиваться */
     object-fit: cover;
     
@@ -421,6 +431,7 @@ nav .three{
     padding: 0 1rem; /* Отступы слева и справа */
     border: var(--link-color)  10px;
     border-style: dotted;
+    
 }
 
 .wrapftwo p {
@@ -438,24 +449,40 @@ nav .three{
 
 
 .galleryTask {
-    width: 500px;
+
+    width: auto;
     height:auto;
     margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
+    background-color: var(--background-two-color);
+    padding-left: 50px; /* Внутренние отступы */
+    padding-right: 50px;
+    margin-right: 50px;
+    margin-left: 50px; /* Внешние отступы */
+    border: 8px double var(--secondary-color); /* Рамка вокруг галереи*/
    
 }
 
 
-.plastic, .koshki, .fish, .maxwell-cat{
+img {
     display: block;
     width: 200px;
     height: auto;
     outline: 5px solid #092304;
     outline-offset: 20px;
-    margin: 50px;
+    margin: 0 auto 60px;
     border-radius: 10px;
+    object-fit: cover;
+    padding: 30px;
 
+}
+
+.image-block{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 
